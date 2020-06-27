@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" EnableTheming="true" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <%--<link href="main.css" rel="stylesheet" />--%>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div class="topnav" >
+        <div style="float:left">
+            <asp:HyperLink Style="text-decoration: none;" class="nav" ID="Home" Text="<b>¯\_(ツ)_/¯</b>" NavigateUrl="#" runat="server"></asp:HyperLink>
+            <%--<asp:DropDownList ID="ThemeDDL" runat="server" OnSelectedIndexChanged="ThemeDDL_SelectedIndexChanged" OnTextChanged="ThemeDDL_SelectedIndexChanged">
+                <asp:ListItem>Theme1</asp:ListItem>
+                <asp:ListItem>Theme2</asp:ListItem>
+            </asp:DropDownList>--%>
+            
+        </div>
+        <div style="float:right;">
+            <asp:Label ID="Label1" runat="server" Text="Hello!"></asp:Label>
+            <asp:Button class="nav" ID="LogoutButton" runat="server" OnClick="LogoutButton_Click" Text="Logout"></asp:Button>
+            <asp:Button ID="ToggleThemeButton" runat="server" Text="Toggle Theme" OnClick="ToggleThemeButton_Click" CausesValidation="false" />
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">     
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

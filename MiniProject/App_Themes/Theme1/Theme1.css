@@ -1,0 +1,13 @@
+﻿
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,166,224,1) 46%, rgba(3,130,201,1) 82%, rgba(5,94,177,1) 96%);
+}
+
+.topnav {
+    width: 100%;
+    overflow: auto;
+    
+}
